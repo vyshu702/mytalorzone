@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            margin-top: 50px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff7e5f;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ff7e5f;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a06e45;
+        }
+
+        .status {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Track Your Order</h1>
+        <p>Enter your Order ID and Email to check the status of your order.</p>
+        <form id="track-order-form">
+            <label for="order-id">Order ID</label>
+            <input type="text" id="order-id" name="order-id" placeholder="Enter your Order ID" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <button type="submit">Track Order</button>
+        </form>
+        <div id="status-message" class="status"></div>
+    </div>
+
+    <script>
+        // JavaScript to simulate order tracking
+        const form = document.getElementById('track-order-form');
+        const statusMessage = document.getElementById('status-message');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const orderId = document.getElementById('order-id').value;
+            const email = document.getElementById('email').value;
+
+            // Simulated status response
+            if (orderId && email) {
+                statusMessage.textContent = `Order #${orderId} is currently being processed. Estimated delivery: 2-3 days.`;
+                statusMessage.style.color = '#4caf50';
+            } else {
+                statusMessage.textContent = 'Invalid details. Please try again.';
+                statusMessage.style.color = '#f44336';
+            }
+        });
+    </script>
+</body>
+</html>

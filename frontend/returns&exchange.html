@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns & Exchange - Mytalorzone By Sahiba</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #ff7e5f;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Policy Section */
+        .policy-section {
+            margin-bottom: 30px;
+        }
+
+        .policy-section ul {
+            padding-left: 20px;
+        }
+
+        .policy-section ul li {
+            margin: 10px 0;
+        }
+
+        /* Form Section */
+        .form-section {
+            margin-top: 20px;
+        }
+
+        .form-section form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .form-section label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-section input,
+        .form-section textarea,
+        .form-section select,
+        .form-section button {
+            width: 95%;
+            padding: 10px;
+            border: 2px solid #ff7e5f;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-section textarea {
+            resize: none;
+        }
+
+        .form-section button {
+            background-color: #ff7e5f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: #ff7e5f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #ff7e5f;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Returns & Exchange Policy</h1>
+    </header>
+
+    <main>
+        <!-- Policy Section -->
+        <section class="policy-section">
+            <h2>Policy Details</h2>
+            <p>We want you to love your purchase! If you're not satisfied, here's how you can return or exchange your product:</p>
+            <ul>
+                <li>Items must be returned or exchanged within 15 days of delivery.</li>
+                <li>Products must be unused, unwashed, and in their original condition with tags intact.</li>
+                <li>Shipping charges for returns or exchanges are non-refundable.</li>
+                <li>Refunds will be processed to the original payment method within 7-10 business days.</li>
+            </ul>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Request a Return or Exchange</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="order-number">Order Number:</label>
+                <input type="text" id="order-number" name="order-number" placeholder="Enter your order number" required>
+
+                <label for="reason">Reason for Return/Exchange:</label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Select a reason</option>
+                    <option value="size_issue">Size Issue</option>
+                    <option value="wrong_product">Received Wrong Product</option>
+                    <option value="damaged_product">Product Damaged</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Provide any additional details"></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mytalorzone By Sahiba. All rights reserved.</p>
+    </footer>
+</body>
+</html>

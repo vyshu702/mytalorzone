@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mytalorzone By Sahiba</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ff7e5f;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            height: 500px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header nav a.active {
+            color: #d9534f;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Contact Header Section */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h1 {
+            color: white;
+        }
+
+        .contact-header p {
+            color: black;
+            background-color: white;
+            width:800px;
+            height: 50px;
+            align-content: center;
+            margin-left: 310px;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            gap: 15px;
+            height: 400px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #ff7e5f;
+            width: 90%;
+            margin-left: 20px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button[type="submit"] {
+            background-color: #ff7e5f;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 150px;
+            margin-left: 230px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: white;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            color: white;
+        }
+
+        /* Map Section */
+        .map-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .map-section h2 {
+            color: white;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please fill out the form below or get in touch with us through our social channels.</p>
+        </section>
+
+        <section class="contact-form-section">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Reach Us</h2>
+            <p><strong>Email:</strong> support@mytalorzonebysahiba.com</p>
+            <p><strong>Phone:</strong> +91-1234567890</p>
+            <p><strong>Address:</strong> 123, Fashion Street, Delhi, India</p>
+        </section>
+
+        <section class="map-section">
+            <h2>Find Us Here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5071512751946!2d-122.08424938467959!3d37.42199997982554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1a7d1ce8ab%3A0x34cbdad5fd2a6902!2sGoogleplex!5e0!3m2!1sen!2sin!4v1618531034453!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mytalorzone By Sahiba. All rights reserved.</p>
+    </footer>
+</body>
+</html>

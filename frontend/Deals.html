@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale - Mytalorzone By Sahiba</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #ff7e5f;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a.active {
+            color: #ff7e5f;
+            border-bottom: 2px solid #ff7e5f;
+            padding-bottom: 5px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #ff7e5f;
+        }
+
+        /* Hero Section */
+        .sale-hero {
+            background: url('./images/sale-banner.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -70px;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        .sale-hero h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0 15px;
+        }
+
+        /* Sale Section */
+        .sale-section {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 1200px;
+            margin-top: -50px;
+        }
+
+        .sale-section h2 {
+            color: #ff7e5f;
+            margin-bottom: 20px;
+        }
+
+        .sale-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+        }
+
+        .sale-card {
+            border: 2px solid #ff7e5f;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fdfdfd;
+        }
+
+        .sale-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sale-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ff7e5f;
+        }
+
+        .sale-card h3 {
+            margin: 15px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .sale-card p {
+            margin: 5px 0;
+        }
+
+        .sale-card .original-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .sale-card .sale-price {
+            color: #ff7e5f;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .sale-card button {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 15px 0;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .sale-card button:hover {
+            background-color:#ff7e5f;
+        }
+
+        /* Footer */
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="sale.html" class="active">Sale</a>
+        </nav>
+    </header> -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="sale-hero">
+            <h1>Exclusive Sale - Up to 50% Off!</h1>
+        </section>
+
+        <!-- Sale Products Section -->
+        <section class="sale-section">
+            <h2>Hot Deals for You</h2>
+            <div class="sale-cards">
+                <!-- Product 1 -->
+                <div class="sale-card">
+                    <img src="./images/deals/clothes.jpeg" alt="Stylish Kurti">
+                    <h3>Clothes</h3>
+                    <p><span class="original-price">₹1999</span> <span class="sale-price">₹999</span></p>
+                    <button>Buy Now</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="sale-card">
+                    <img src="./images/deals/shoes.jpeg" alt="Elegant Saree">
+                    <h3>Shoes</h3>
+                    <p><span class="original-price">₹2999</span> <span class="sale-price">₹1499</span></p>
+                    <button>Buy Now</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="sale-card">
+                    <img src="./images/deals/traditional.jpeg" alt="Designer Lehenga">
+                    <h3>Traditional Wear</h3>
+                    <p><span class="original-price">₹4999</span> <span class="sale-price">₹2499</span></p>
+                    <button>Buy Now</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="sale-card">
+                    <img src="./images/deals/western.jpeg" alt="Party Dress">
+                    <h3>Western Wear</h3>
+                    <p><span class="original-price">₹3999</span> <span class="sale-price">₹1999</span></p>
+                    <button>Buy Now</button>
+                </div>
+                <!-- Product 5 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mytalorzone By Sahiba. All rights reserved.</p>
+    </footer>
+</body>
+</html>
